@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35A4C2941B63D365001A4685 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A4C2931B63D365001A4685 /* CoreGraphics.framework */; };
+		35A4C2971B63D568001A4685 /* ZTAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4C2961B63D568001A4685 /* ZTAudioFileStream.m */; };
+		35A4C29A1B63D5D0001A4685 /* ZTAudioParsedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4C2991B63D5D0001A4685 /* ZTAudioParsedData.m */; };
+		35A4C29D1B63E59F001A4685 /* ZTAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4C29C1B63E59F001A4685 /* ZTAudioFile.m */; };
+		35A4C2A01B63F562001A4685 /* ZTAudioBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4C29F1B63F562001A4685 /* ZTAudioBuffer.m */; };
+		35A4C2A31B640589001A4685 /* ZTAudioOutputQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4C2A21B640589001A4685 /* ZTAudioOutputQueue.m */; };
+		35A4C2A51B641676001A4685 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A4C2A41B641676001A4685 /* UIKit.framework */; };
+		35A4C2A71B641849001A4685 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A4C2A61B641848001A4685 /* Foundation.framework */; };
+		35A4C2A81B641F46001A4685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A586AF1B638ABD00B67336 /* Main.storyboard */; };
+		35A4C2A91B641F46001A4685 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A586B41B638ABD00B67336 /* LaunchScreen.xib */; };
+		35A4C2AB1B641FBE001A4685 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A4C2AA1B641FBE001A4685 /* AudioToolbox.framework */; };
+		35A4C2B11B6428D2001A4685 /* NSTimer+BlocksSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4C2B01B6428D2001A4685 /* NSTimer+BlocksSupport.m */; };
+		35A4C2B31B642A76001A4685 /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A4C2B21B642A76001A4685 /* FLAC.framework */; };
+		35A4C2B71B64A9DA001A4685 /* ZTFlacDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4C2B61B64A9DA001A4685 /* ZTFlacDecoder.m */; };
+		35A4C2BB1B64B8AB001A4685 /* flactest.flac in Resources */ = {isa = PBXBuildFile; fileRef = 35A4C2B41B642FB3001A4685 /* flactest.flac */; };
+		35A586A81B638ABD00B67336 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A586A71B638ABD00B67336 /* main.m */; };
+		35A586AB1B638ABD00B67336 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A586AA1B638ABD00B67336 /* AppDelegate.m */; };
+		35A586AE1B638ABD00B67336 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A586AD1B638ABD00B67336 /* ViewController.m */; };
+		35A586B31B638ABD00B67336 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A586B21B638ABD00B67336 /* Images.xcassets */; };
+		35A586C21B638ABD00B67336 /* ZTAudioPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A586C11B638ABD00B67336 /* ZTAudioPlayTests.m */; };
+		35A586D11B638B8700B67336 /* ZTHTTPSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A586D01B638B8700B67336 /* ZTHTTPSource.m */; };
+		35A586D41B63904700B67336 /* ZTLocalSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A586D31B63904700B67336 /* ZTLocalSource.m */; };
+		35A586D71B63910A00B67336 /* ZTFlacSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A586D61B63910A00B67336 /* ZTFlacSource.m */; };
+		35A586DB1B6391BB00B67336 /* ZTAudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A586DA1B6391BB00B67336 /* ZTAudioPlay.m */; };
+		35A586DE1B6392AC00B67336 /* MCAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A586DD1B6392AC00B67336 /* MCAudioSession.m */; };
+		35A586E01B6397F600B67336 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35A586DF1B6397F600B67336 /* test.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35A586BC1B638ABD00B67336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35A5869A1B638ABD00B67336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A586A11B638ABD00B67336;
+			remoteInfo = ZTAudioPlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35A4C2931B63D365001A4685 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		35A4C2951B63D568001A4685 /* ZTAudioFileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTAudioFileStream.h; sourceTree = "<group>"; };
+		35A4C2961B63D568001A4685 /* ZTAudioFileStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTAudioFileStream.m; sourceTree = "<group>"; };
+		35A4C2981B63D5D0001A4685 /* ZTAudioParsedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTAudioParsedData.h; sourceTree = "<group>"; };
+		35A4C2991B63D5D0001A4685 /* ZTAudioParsedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTAudioParsedData.m; sourceTree = "<group>"; };
+		35A4C29B1B63E59F001A4685 /* ZTAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTAudioFile.h; sourceTree = "<group>"; };
+		35A4C29C1B63E59F001A4685 /* ZTAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTAudioFile.m; sourceTree = "<group>"; };
+		35A4C29E1B63F562001A4685 /* ZTAudioBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTAudioBuffer.h; sourceTree = "<group>"; };
+		35A4C29F1B63F562001A4685 /* ZTAudioBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTAudioBuffer.m; sourceTree = "<group>"; };
+		35A4C2A11B640589001A4685 /* ZTAudioOutputQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTAudioOutputQueue.h; sourceTree = "<group>"; };
+		35A4C2A21B640589001A4685 /* ZTAudioOutputQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTAudioOutputQueue.m; sourceTree = "<group>"; };
+		35A4C2A41B641676001A4685 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35A4C2A61B641848001A4685 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35A4C2AA1B641FBE001A4685 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		35A4C2AF1B6428D2001A4685 /* NSTimer+BlocksSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlocksSupport.h"; sourceTree = "<group>"; };
+		35A4C2B01B6428D2001A4685 /* NSTimer+BlocksSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlocksSupport.m"; sourceTree = "<group>"; };
+		35A4C2B21B642A76001A4685 /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLAC.framework; sourceTree = "<group>"; };
+		35A4C2B41B642FB3001A4685 /* flactest.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = flactest.flac; sourceTree = "<group>"; };
+		35A4C2B51B64A9DA001A4685 /* ZTFlacDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFlacDecoder.h; sourceTree = "<group>"; };
+		35A4C2B61B64A9DA001A4685 /* ZTFlacDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFlacDecoder.m; sourceTree = "<group>"; };
+		35A4C2BA1B64B2FA001A4685 /* ZTDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTDecoder.h; sourceTree = "<group>"; };
+		35A586A21B638ABD00B67336 /* ZTAudioPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTAudioPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A586A61B638ABD00B67336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35A586A71B638ABD00B67336 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35A586A91B638ABD00B67336 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35A586AA1B638ABD00B67336 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35A586AC1B638ABD00B67336 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		35A586AD1B638ABD00B67336 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		35A586B01B638ABD00B67336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35A586B21B638ABD00B67336 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		35A586B51B638ABD00B67336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		35A586BB1B638ABD00B67336 /* ZTAudioPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTAudioPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A586C01B638ABD00B67336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35A586C11B638ABD00B67336 /* ZTAudioPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTAudioPlayTests.m; sourceTree = "<group>"; };
+		35A586CC1B638B1E00B67336 /* ZTDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTDataSource.h; sourceTree = "<group>"; };
+		35A586CF1B638B8700B67336 /* ZTHTTPSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTHTTPSource.h; sourceTree = "<group>"; };
+		35A586D01B638B8700B67336 /* ZTHTTPSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTHTTPSource.m; sourceTree = "<group>"; };
+		35A586D21B63904700B67336 /* ZTLocalSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTLocalSource.h; sourceTree = "<group>"; };
+		35A586D31B63904700B67336 /* ZTLocalSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTLocalSource.m; sourceTree = "<group>"; };
+		35A586D51B63910A00B67336 /* ZTFlacSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFlacSource.h; sourceTree = "<group>"; };
+		35A586D61B63910A00B67336 /* ZTFlacSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFlacSource.m; sourceTree = "<group>"; };
+		35A586D81B63913E00B67336 /* ZTCommonProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTCommonProtocols.h; sourceTree = "<group>"; };
+		35A586D91B6391BB00B67336 /* ZTAudioPlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTAudioPlay.h; sourceTree = "<group>"; };
+		35A586DA1B6391BB00B67336 /* ZTAudioPlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTAudioPlay.m; sourceTree = "<group>"; };
+		35A586DC1B6392AC00B67336 /* MCAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAudioSession.h; sourceTree = "<group>"; };
+		35A586DD1B6392AC00B67336 /* MCAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAudioSession.m; sourceTree = "<group>"; };
+		35A586DF1B6397F600B67336 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35A5869F1B638ABD00B67336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A4C2AB1B641FBE001A4685 /* AudioToolbox.framework in Frameworks */,
+				35A4C2A71B641849001A4685 /* Foundation.framework in Frameworks */,
+				35A4C2B31B642A76001A4685 /* FLAC.framework in Frameworks */,
+				35A4C2A51B641676001A4685 /* UIKit.framework in Frameworks */,
+				35A4C2941B63D365001A4685 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35A586B81B638ABD00B67336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35A586991B638ABD00B67336 = {
+			isa = PBXGroup;
+			children = (
+				35A4C2B21B642A76001A4685 /* FLAC.framework */,
+				35A4C2AA1B641FBE001A4685 /* AudioToolbox.framework */,
+				35A4C2A61B641848001A4685 /* Foundation.framework */,
+				35A4C2A41B641676001A4685 /* UIKit.framework */,
+				35A4C2931B63D365001A4685 /* CoreGraphics.framework */,
+				35A586A41B638ABD00B67336 /* ZTAudioPlay */,
+				35A586BE1B638ABD00B67336 /* ZTAudioPlayTests */,
+				35A586A31B638ABD00B67336 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35A586A31B638ABD00B67336 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A586A21B638ABD00B67336 /* ZTAudioPlay.app */,
+				35A586BB1B638ABD00B67336 /* ZTAudioPlayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35A586A41B638ABD00B67336 /* ZTAudioPlay */ = {
+			isa = PBXGroup;
+			children = (
+				35A586CB1B638AD600B67336 /* ZTAudioPlay */,
+				35A586A91B638ABD00B67336 /* AppDelegate.h */,
+				35A586AA1B638ABD00B67336 /* AppDelegate.m */,
+				35A586AC1B638ABD00B67336 /* ViewController.h */,
+				35A586AD1B638ABD00B67336 /* ViewController.m */,
+				35A4C2AF1B6428D2001A4685 /* NSTimer+BlocksSupport.h */,
+				35A4C2B01B6428D2001A4685 /* NSTimer+BlocksSupport.m */,
+				35A586AF1B638ABD00B67336 /* Main.storyboard */,
+				35A586B21B638ABD00B67336 /* Images.xcassets */,
+				35A586B41B638ABD00B67336 /* LaunchScreen.xib */,
+				35A586A51B638ABD00B67336 /* Supporting Files */,
+			);
+			path = ZTAudioPlay;
+			sourceTree = "<group>";
+		};
+		35A586A51B638ABD00B67336 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35A586A61B638ABD00B67336 /* Info.plist */,
+				35A586A71B638ABD00B67336 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35A586BE1B638ABD00B67336 /* ZTAudioPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				35A586C11B638ABD00B67336 /* ZTAudioPlayTests.m */,
+				35A586BF1B638ABD00B67336 /* Supporting Files */,
+			);
+			path = ZTAudioPlayTests;
+			sourceTree = "<group>";
+		};
+		35A586BF1B638ABD00B67336 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35A586C01B638ABD00B67336 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35A586CB1B638AD600B67336 /* ZTAudioPlay */ = {
+			isa = PBXGroup;
+			children = (
+				35A4C2B41B642FB3001A4685 /* flactest.flac */,
+				35A586DF1B6397F600B67336 /* test.mp3 */,
+				35A4C2BA1B64B2FA001A4685 /* ZTDecoder.h */,
+				35A586CC1B638B1E00B67336 /* ZTDataSource.h */,
+				35A586CF1B638B8700B67336 /* ZTHTTPSource.h */,
+				35A586D01B638B8700B67336 /* ZTHTTPSource.m */,
+				35A586D21B63904700B67336 /* ZTLocalSource.h */,
+				35A586D31B63904700B67336 /* ZTLocalSource.m */,
+				35A586D51B63910A00B67336 /* ZTFlacSource.h */,
+				35A586D61B63910A00B67336 /* ZTFlacSource.m */,
+				35A4C2B51B64A9DA001A4685 /* ZTFlacDecoder.h */,
+				35A4C2B61B64A9DA001A4685 /* ZTFlacDecoder.m */,
+				35A586D81B63913E00B67336 /* ZTCommonProtocols.h */,
+				35A586DC1B6392AC00B67336 /* MCAudioSession.h */,
+				35A586DD1B6392AC00B67336 /* MCAudioSession.m */,
+				35A4C29B1B63E59F001A4685 /* ZTAudioFile.h */,
+				35A4C29C1B63E59F001A4685 /* ZTAudioFile.m */,
+				35A4C2951B63D568001A4685 /* ZTAudioFileStream.h */,
+				35A4C2961B63D568001A4685 /* ZTAudioFileStream.m */,
+				35A4C2A11B640589001A4685 /* ZTAudioOutputQueue.h */,
+				35A4C2A21B640589001A4685 /* ZTAudioOutputQueue.m */,
+				35A4C29E1B63F562001A4685 /* ZTAudioBuffer.h */,
+				35A4C29F1B63F562001A4685 /* ZTAudioBuffer.m */,
+				35A4C2981B63D5D0001A4685 /* ZTAudioParsedData.h */,
+				35A4C2991B63D5D0001A4685 /* ZTAudioParsedData.m */,
+				35A586D91B6391BB00B67336 /* ZTAudioPlay.h */,
+				35A586DA1B6391BB00B67336 /* ZTAudioPlay.m */,
+			);
+			path = ZTAudioPlay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35A586A11B638ABD00B67336 /* ZTAudioPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35A586C51B638ABD00B67336 /* Build configuration list for PBXNativeTarget "ZTAudioPlay" */;
+			buildPhases = (
+				35A5869E1B638ABD00B67336 /* Sources */,
+				35A5869F1B638ABD00B67336 /* Frameworks */,
+				35A586A01B638ABD00B67336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZTAudioPlay;
+			productName = ZTAudioPlay;
+			productReference = 35A586A21B638ABD00B67336 /* ZTAudioPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35A586BA1B638ABD00B67336 /* ZTAudioPlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35A586C81B638ABD00B67336 /* Build configuration list for PBXNativeTarget "ZTAudioPlayTests" */;
+			buildPhases = (
+				35A586B71B638ABD00B67336 /* Sources */,
+				35A586B81B638ABD00B67336 /* Frameworks */,
+				35A586B91B638ABD00B67336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35A586BD1B638ABD00B67336 /* PBXTargetDependency */,
+			);
+			name = ZTAudioPlayTests;
+			productName = ZTAudioPlayTests;
+			productReference = 35A586BB1B638ABD00B67336 /* ZTAudioPlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35A5869A1B638ABD00B67336 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = spice;
+				TargetAttributes = {
+					35A586A11B638ABD00B67336 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					35A586BA1B638ABD00B67336 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 35A586A11B638ABD00B67336;
+					};
+				};
+			};
+			buildConfigurationList = 35A5869D1B638ABD00B67336 /* Build configuration list for PBXProject "ZTAudioPlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35A586991B638ABD00B67336;
+			productRefGroup = 35A586A31B638ABD00B67336 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35A586A11B638ABD00B67336 /* ZTAudioPlay */,
+				35A586BA1B638ABD00B67336 /* ZTAudioPlayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35A586A01B638ABD00B67336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A4C2BB1B64B8AB001A4685 /* flactest.flac in Resources */,
+				35A4C2A81B641F46001A4685 /* Main.storyboard in Resources */,
+				35A4C2A91B641F46001A4685 /* LaunchScreen.xib in Resources */,
+				35A586B31B638ABD00B67336 /* Images.xcassets in Resources */,
+				35A586E01B6397F600B67336 /* test.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35A586B91B638ABD00B67336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35A5869E1B638ABD00B67336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A586D71B63910A00B67336 /* ZTFlacSource.m in Sources */,
+				35A586D11B638B8700B67336 /* ZTHTTPSource.m in Sources */,
+				35A4C2B71B64A9DA001A4685 /* ZTFlacDecoder.m in Sources */,
+				35A586AE1B638ABD00B67336 /* ViewController.m in Sources */,
+				35A586DE1B6392AC00B67336 /* MCAudioSession.m in Sources */,
+				35A4C2A31B640589001A4685 /* ZTAudioOutputQueue.m in Sources */,
+				35A586AB1B638ABD00B67336 /* AppDelegate.m in Sources */,
+				35A586D41B63904700B67336 /* ZTLocalSource.m in Sources */,
+				35A586DB1B6391BB00B67336 /* ZTAudioPlay.m in Sources */,
+				35A4C2B11B6428D2001A4685 /* NSTimer+BlocksSupport.m in Sources */,
+				35A586A81B638ABD00B67336 /* main.m in Sources */,
+				35A4C2A01B63F562001A4685 /* ZTAudioBuffer.m in Sources */,
+				35A4C2971B63D568001A4685 /* ZTAudioFileStream.m in Sources */,
+				35A4C29A1B63D5D0001A4685 /* ZTAudioParsedData.m in Sources */,
+				35A4C29D1B63E59F001A4685 /* ZTAudioFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35A586B71B638ABD00B67336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A586C21B638ABD00B67336 /* ZTAudioPlayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35A586BD1B638ABD00B67336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A586A11B638ABD00B67336 /* ZTAudioPlay */;
+			targetProxy = 35A586BC1B638ABD00B67336 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35A586AF1B638ABD00B67336 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35A586B01B638ABD00B67336 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35A586B41B638ABD00B67336 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35A586B51B638ABD00B67336 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35A586C31B638ABD00B67336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35A586C41B638ABD00B67336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35A586C61B638ABD00B67336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ZTAudioPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		35A586C71B638ABD00B67336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ZTAudioPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		35A586C91B638ABD00B67336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZTAudioPlayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZTAudioPlay.app/ZTAudioPlay";
+			};
+			name = Debug;
+		};
+		35A586CA1B638ABD00B67336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZTAudioPlayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZTAudioPlay.app/ZTAudioPlay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35A5869D1B638ABD00B67336 /* Build configuration list for PBXProject "ZTAudioPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A586C31B638ABD00B67336 /* Debug */,
+				35A586C41B638ABD00B67336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35A586C51B638ABD00B67336 /* Build configuration list for PBXNativeTarget "ZTAudioPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A586C61B638ABD00B67336 /* Debug */,
+				35A586C71B638ABD00B67336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35A586C81B638ABD00B67336 /* Build configuration list for PBXNativeTarget "ZTAudioPlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A586C91B638ABD00B67336 /* Debug */,
+				35A586CA1B638ABD00B67336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35A5869A1B638ABD00B67336 /* Project object */;
+}
